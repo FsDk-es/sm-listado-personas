@@ -20,7 +20,10 @@ function agregarPersona() {
     const nombre = forma['nombre']
     const apellido = forma['apellido']
     const persona =  new Persona(nombre.value, apellido.value);
-    console.log(persona);
-    personas.push(persona);
-    mostrarPersonas();
+    if (nombre.value == '' || apellido.value == '') {
+        alert('aqui no hay na escrito jolines, debes rellenar los campos requeridos.')
+    } else {
+        personas.push(persona);
+        mostrarPersonas();
+    }
 }
