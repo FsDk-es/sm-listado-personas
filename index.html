@@ -7,7 +7,7 @@
     <title>Listado de Personas</title>
     <link rel="stylesheet" href="css/estilos.css" />
 </head>
-<body>
+<body onload="mostrarPersonas()">
     <div class="contenedor" id="cabecero">
         <h1>Listado de Personas</h1>
     </div>
@@ -16,6 +16,11 @@
             <ul id="personas">
                 <!--<li>Jose Antonio Gimenez Cayuela</li>-->
             </ul>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div style="text-align: center;">
+        <button style="cursor: pointer;" onclick="agregarPersona()">+</button>
         </div>
     </div>
     <script src='js/persona.js'></script> 
